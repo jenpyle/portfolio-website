@@ -231,7 +231,7 @@ button:focus,
     grid-row-end: 3;
   }
 }
-/*HERE FOR FORM BORDER BOX ISSUE----------------------------------------------------------*/
+
 /* start grid fallback for unsupported browsers */
 .contact-form {
   background-color: var(--secondary-background-color);
@@ -250,7 +250,7 @@ button:focus,
     margin: 0;
   }
 }
-/*END ISSUE----------------------------------------------------------*/
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;
