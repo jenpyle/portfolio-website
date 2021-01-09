@@ -231,7 +231,7 @@ button:focus,
     grid-row-end: 3;
   }
 }
-/*HERE FOR FORM BORDER BOX ISSUE----------------------------------------------------------*/
+
 /* start grid fallback for unsupported browsers */
 .contact-form {
   background-color: var(--secondary-background-color);
@@ -244,13 +244,31 @@ button:focus,
   .contact-form {
     background-color: var(--secondary-background-color);
     border: 1px solid rosybrown;
-    padding: 20px;
-    width: auto;
+    padding: 10px;
     min-height: auto;
-    margin: 0;
   }
 }
-/*END ISSUE----------------------------------------------------------*/
+
+.message-title {
+  color: hsl(0, 5%, 37%);
+}
+
+input {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+#contact-name #contact-email #contact-phone #contact-message {
+  box-sizing: border-box;
+  margin-bottom: 200px;
+}
+#contact-message {
+  box-sizing: border-box;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;

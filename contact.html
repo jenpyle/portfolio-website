@@ -1,132 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--- optmize the display for mobile devices --->
-    <title>Contact Jennifer Pyle2</title>
-    <link rel="shortcut icon" type="image/png" href="./img/icons8-j-64.png" />
-    <link rel="normalize" type="text/css" href="css/normalize.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- important that its above styles.css for not overriding -->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <script src="js/svg-inject.min.js"></script>
-  </head>
-  <body>
-    <div>
-      <header class="page-header">
-        <img
-          class="page-header__item logo-image"
-          src="img/profolioLogo2-final.jpg"
-          alt="Jenny's header logo"
-        />
 
-        <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-              <a href="index.html" role="menuitem" class="navigation-list__item"
-                >Home</a
-              >
-            </li>
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item"
-                >About Me</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="work.html"
-                role="menuitem"
-                class="navigation-list__item navigation-list__item"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation-list__item navigation-list__item--active"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-    <h1>Contact</h1>
-    <div>
-      <a href="mailto:jennypyle440@gmail.com">Contact me</a>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--- optmize the display for mobile devices --->
+  <title>Contact Jennifer Pyle2</title>
+  <link rel="shortcut icon" type="image/png" href="./img/icons8-j-64.png" />
+  <link rel="normalize" type="text/css" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+  <!-- important that its above styles.css for not overriding -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="js/svg-inject.min.js"></script>
+</head>
 
-    <div>
-      Jennifer Pyle<br />
-      2919 Meadowlark Ave<br />
-      Fort Collins, Colorado<br />
-      USA<br />
-      <br />
-      <br />
-      Tel <a href="tel:+17202093998">+17202093998</a><br />
-      Skype <a href="skype:jennypyle440"> jennypyle440</a><br />
-      <a href="mailto:jennypyle440@gmail.com">jennypyle440@gmail.com</a>
-    </div>
-    <div class="contact-form">
-      <!--- change class to project-list__item and it works--->
-      <form action="" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email">E-mail: </label>
-        <input type="email" id="contact-email" required />
+<body>
+  <div>
+    <header class="page-header">
+      <img class="page-header__item logo-image" src="img/profolioLogo2-final.jpg" alt="Jenny's header logo" />
 
-        <label class="standard-label" for="contact-phone">Telephone: </label>
-        <input
-          type="tel"
-          id="contact-phone"
-          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-        />
-
-        <label class="standard-label" for="contact-message">Message: </label>
-        <textarea maxlength="240" id="contact-message" required></textarea>
-
-        <input type="submit" value="Send message" />
-      </form>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem"
+              class="navigation-list__item navigation-list__item--active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <h1>Contact</h1>
+  <div class="basic-info">
+    <a href="mailto:jennypyle440@gmail.com">Contact me</a>
+    <br>
+    Jennifer Pyle<br />
+    2919 Meadowlark Ave<br />
+    Fort Collins, Colorado<br />
+    USA<br />
+    <br />
+    <br />
+    Tel <a href="tel:+17202093998">+17202093998</a><br />
+    Skype <a href="skype:jennypyle440"> jennypyle440</a><br />
+    <a href="mailto:jennypyle440@gmail.com">jennypyle440@gmail.com</a>
+  </div>
+  <div class="contact-form">
+    <form action="" method="post" id="contact-form">
+      <h1 class="message-title">Send me a message!</h1>
+      <label class="standard-label" for="contact-name">Name: </label>
+      <br>
+      <input type="name" id="contact-name" required />
+      <br>
+      <label class="standard-label" for="contact-email">E-mail: </label>
+      <br>
+      <input type="email" id="contact-email" required />
+      <br>
+      <label class="standard-label" for="contact-phone">Telephone: </label>
+      <br>
+      <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+      <br>
+      <label class="standard-label" for="contact-message">Message: </label>
+      <br>
+      <textarea maxlength="240" id="contact-message" required></textarea>
+      <br>
+      <input type="submit" value="Send message" />
+    </form>
+  </div>
+  <div>
+    <img src="./img/person-at-computer.svg" onload="SVGInject(this)" alt="Image of woman coding at computer" />
+  </div>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a class="social-media__item" href="https://github.com/jenpyle" target="_blank" />
+      <img class="social-media__item" src="img/github.svg" alt="github link" />
+      <a class="social-media__item" href="https://www.linkedin.com/in/jenniferpyle1/" target="_blank" />
+      <img class="social-media__item" src="img/linkedin.svg" alt="linkedin link" />
     </div>
-    <div>
-      <img
-        src="./img/person-at-computer.svg"
-        onload="SVGInject(this)"
-        alt="Image of woman coding at computer"
-      />
-    </div>
-    <footer class="page-footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a
-          class="social-media__item"
-          href="https://github.com/jenpyle"
-          target="_blank"
-        />
-        <img
-          class="social-media__item"
-          src="img/github.svg"
-          alt="github link"
-        />
-        <a
-          class="social-media__item"
-          href="https://www.linkedin.com/in/jenniferpyle1/"
-          target="_blank"
-        />
-        <img
-          class="social-media__item"
-          src="img/linkedin.svg"
-          alt="linkedin link"
-        />
-      </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-  </body>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
 </html>
