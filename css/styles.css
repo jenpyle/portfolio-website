@@ -258,12 +258,7 @@ input {
   margin-bottom: 4px;
 }
 
-#contact-name #contact-email #contact-phone #contact-message {
-  box-sizing: border-box;
-  margin-bottom: 200px;
-}
 #contact-message {
-  box-sizing: border-box;
   height: 200px;
   width: 100%;
   margin-bottom: 5px;
