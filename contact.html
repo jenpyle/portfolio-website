@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,11 +41,9 @@
     </header>
   </div>
   <h1>Contact</h1>
-  <div>
+  <div class="basic-info">
     <a href="mailto:jennypyle440@gmail.com">Contact me</a>
-  </div>
-
-  <div>
+    <br>
     Jennifer Pyle<br />
     2919 Meadowlark Ave<br />
     Fort Collins, Colorado<br />
@@ -57,15 +56,23 @@
   </div>
   <div class="contact-form">
     <form action="" method="post" id="contact-form">
+      <h1 class="message-title">Send me a message!</h1>
+      <label class="standard-label" for="contact-name">Name: </label>
+      <br>
+      <input type="name" id="contact-name" required />
+      <br>
       <label class="standard-label" for="contact-email">E-mail: </label>
+      <br>
       <input type="email" id="contact-email" required />
-
+      <br>
       <label class="standard-label" for="contact-phone">Telephone: </label>
+      <br>
       <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-
+      <br>
       <label class="standard-label" for="contact-message">Message: </label>
+      <br>
       <textarea maxlength="240" id="contact-message" required></textarea>
-
+      <br>
       <input type="submit" value="Send message" />
     </form>
   </div>
