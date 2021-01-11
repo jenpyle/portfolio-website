@@ -41,40 +41,44 @@
     </header>
   </div>
   <h1>Contact</h1>
-  <div class="basic-info">
-    <a href="mailto:jennypyle440@gmail.com">Contact me</a>
-    <br>
-    Jennifer Pyle<br />
-    2919 Meadowlark Ave<br />
-    Fort Collins, Colorado<br />
-    USA<br />
-    <br />
-    <br />
-    Tel <a href="tel:+17202093998">+17202093998</a><br />
-    Skype <a href="skype:jennypyle440"> jennypyle440</a><br />
-    <a href="mailto:jennypyle440@gmail.com">jennypyle440@gmail.com</a>
-  </div>
-  <div class="contact-form">
-    <form action="" method="post" id="contact-form">
-      <h1 class="message-title">Send me a message!</h1>
-      <label class="standard-label" for="contact-name">Name: </label>
+  <div class="flex-wrapper">
+    <div class="basic-info">
+      <a href="mailto:jennypyle440@gmail.com">Contact me</a>
       <br>
-      <input type="name" id="contact-name" required />
-      <br>
-      <label class="standard-label" for="contact-email">E-mail: </label>
-      <br>
-      <input type="email" id="contact-email" required />
-      <br>
-      <label class="standard-label" for="contact-phone">Telephone: </label>
-      <br>
-      <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-      <br>
-      <label class="standard-label" for="contact-message">Message: </label>
-      <br>
-      <textarea maxlength="240" id="contact-message" required></textarea>
-      <br>
-      <input type="submit" value="Send message" />
-    </form>
+      <div class="basic-info__address">
+        Jennifer Pyle<br />
+        2919 Meadowlark Ave<br />
+        Fort Collins, Colorado<br />
+        USA<br />
+        <br />
+        <br />
+      </div>
+      Tel <a href="tel:+17202093998">+17202093998</a><br />
+      Skype <a href="skype:jennypyle440"> jennypyle440</a><br />
+      <a href="mailto:jennypyle440@gmail.com">jennypyle440@gmail.com</a>
+    </div>
+    <div class="contact-form">
+      <form action="" method="post" id="contact-form">
+        <h1 class="message-title">Send me a message!</h1>
+        <label class="standard-label" for="contact-name">Name: </label>
+        <br>
+        <input type="name" id="contact-name" required />
+        <br>
+        <label class="standard-label" for="contact-email">E-mail: </label>
+        <br>
+        <input type="email" id="contact-email" required />
+        <br>
+        <label class="standard-label" for="contact-phone">Telephone: </label>
+        <br>
+        <input type="tel" id="contact-phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
+        <br>
+        <label class="standard-label" for="contact-message">Message: </label>
+        <br>
+        <textarea maxlength="240" id="contact-message" required></textarea>
+        <br>
+        <input type="submit" value="Send message" />
+      </form>
+    </div>
   </div>
   <div>
     <img src="./img/person-at-computer.svg" onload="SVGInject(this)" alt="Image of woman coding at computer" />
@@ -82,6 +86,7 @@
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
+      <img class="social-media__item" src="img/email-icon.svg" alt="github link" />
       <a class="social-media__item" href="https://github.com/jenpyle" target="_blank" />
       <img class="social-media__item" src="img/github.svg" alt="github link" />
       <a class="social-media__item" href="https://www.linkedin.com/in/jenniferpyle1/" target="_blank" />

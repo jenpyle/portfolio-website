@@ -9,8 +9,10 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
-  --dark-grey: #2b2b2b;
+  --dark-grey: #ffe1eb;
   --primary-background-color: LavenderBlush;
+  --color1: #ffdce7;
+  --color2: #ffe1eb;
   --secondary-background-color: Linen;
   --primary-accent-color: Rosybrown;
   --selected-link-color: #489c79;
@@ -188,6 +190,7 @@ button:focus,
 .about-list {
   list-style-type: none;
   text-align: center;
+  background-color: var(--color2);
 }
 
 .about-list__item {
@@ -244,13 +247,29 @@ button:focus,
   .contact-form {
     background-color: var(--secondary-background-color);
     border: 1px solid rosybrown;
-    padding: 10px;
+    padding: 0px;
     min-height: auto;
+    width: 300px;
+    /*margin: 90px;*/
   }
+}
+
+.basic-info {
+  background-color: var(--color2);
+  height: 450px;
+  width: auto;
+  font-size: larger;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.basic-info__address {
+  font-weight: bold;
 }
 
 .message-title {
   color: hsl(0, 5%, 37%);
+  text-align: center;
 }
 
 input {
@@ -262,6 +281,13 @@ input {
   height: 200px;
   width: 100%;
   margin-bottom: 5px;
+}
+
+.flex-wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -532,6 +558,18 @@ input {
   margin: auto;
   width: 40%;
   height: 40%;
+}
+
+#person-at-computer {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+#person-with-laptop {
+  display: block;
+  margin: auto;
+  width: 40%;
 }
 
 .sun {
