@@ -258,25 +258,30 @@ button:focus,
   padding-right: 20px;
 }
 
-/* start grid fallback for unsupported browsers 
-.contact-form {
-  background-color: var(--secondary-background-color);
-  display: inline-block;
-  width: 33%;
-  height: auto;
-}
-end grid fallback */
-
 .contact-form {
   background-color: var(--secondary-background-color);
   border: 1px solid rosybrown;
-  height: 480px;
-  width: 450px;
+  width: auto;
+  /*height: 480px;
+  flex-grow: 1;
+  flex-shrink: 1;*/
 }
 
 .contact-form h1 {
   color: hsl(0, 5%, 37%);
   text-align: center;
+}
+
+.contact-form__inputs {
+  /*for the name, email, and telephone*/
+  width: auto;
+  flex: 1 1 400px;
+  padding: 100px;
+}
+
+.contact-form__message {
+  /*for the message section*/
+  flex: 1 1 400px;
 }
 
 .contact-form input {
@@ -285,19 +290,26 @@ end grid fallback */
 }
 
 .contact-form textarea {
+  /*flex: 1 1 400px;*/
   height: 200px;
-  width: 100%;
+  min-width: 400px;
   margin-bottom: 5px;
+  max-width: 700px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .flex-wrapper {
-  width: 100%;
+  width: auto;
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
+  justify-content: space-between;
 
+  align-items: center;
+  align-content: center;
+}
 /*-END OF CHANGES------------------------------------------------------------------------------*/
+
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;

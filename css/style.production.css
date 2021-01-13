@@ -156,7 +156,7 @@ button:focus,
 
 .social-media__item:hover,
 .social-media__item:focus {
-  width: 3%;
+  width: 5%;
   height: auto;
 }
 
@@ -287,7 +287,7 @@ end grid fallback */
   background-color: Linen;
   border: 1px solid rosybrown;
   height: 480px;
-  width: 450px;
+  width: 650px;
 }
 
 .contact-form h1 {
@@ -324,6 +324,10 @@ end grid fallback */
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
+  /*.contact-form {
+    height: 480px;
+    width: 450px;
+  }*/
 }
 
 @media all and (max-width: 500px) {
@@ -331,6 +335,10 @@ end grid fallback */
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
+  /*.contact-form {
+    height: 480px;
+    width: 450px;
+  }*/
 }
 
 @media all and (max-width: 750px) {
