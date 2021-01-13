@@ -2,9 +2,13 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
-/* external style sheet */
+
+#Layer_1 {
+  height: 10%;
+  width: 10%;
+}
 
 body {
   font-family: "Ubuntu", sans-serif;
@@ -61,7 +65,7 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 a:active {
@@ -86,6 +90,7 @@ a:active {
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
+  -o-transition: 0.4s opacity;
   transition: 0.4s opacity;
 }
 
@@ -106,6 +111,7 @@ button {
   /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s opacity;
+  -o-transition: 0.4s opacity;
   transition: 0.4s opacity;
 }
 
@@ -145,6 +151,7 @@ button:focus,
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  border: none !important;
 }
 
 .social-media__item:hover,
@@ -244,26 +251,74 @@ button:focus,
     grid-row-end: 3;
   }
 }
-/*HERE FOR FORM BORDER BOX ISSUE----------------------------------------------------------*/
-/* start grid fallback for unsupported browsers */
+/*-START HERE------------------------------------------------------------------------------*/
+.contact-info {
+  width: 450px;
+  font-size: larger;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-info li {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.contact-info img {
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+/* start grid fallback for unsupported browsers 
 .contact-form {
-  background-color: Linen;
+  background-color: var(--secondary-background-color);
   display: inline-block;
   width: 33%;
   height: auto;
 }
-/* end grid fallback */
-@supports (display: grid) {
-  .contact-form {
-    background-color: Linen;
-    border: 1px solid rosybrown;
-    padding: 20px;
-    width: auto;
-    min-height: auto;
-    margin: 0;
-  }
+end grid fallback */
+
+.contact-form {
+  background-color: Linen;
+  border: 1px solid rosybrown;
+  height: 480px;
+  width: 450px;
 }
-/*END ISSUE----------------------------------------------------------*/
+
+.contact-form h1 {
+  color: hsl(0, 5%, 37%);
+  text-align: center;
+}
+
+.contact-form input {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.contact-form textarea {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.flex-wrapper {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+/*-END OF CHANGES------------------------------------------------------------------------------*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;
@@ -502,6 +557,7 @@ button:focus,
   -webkit-animation-name: scale1;
   animation-name: scale1;
   -webkit-transform-origin: center;
+  -ms-transform-origin: center;
   transform-origin: center;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -510,6 +566,7 @@ button:focus,
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-transform: translate(15px, -15px);
+  -ms-transform: translate(15px, -15px);
   transform: translate(15px, -15px);
 }
 
@@ -532,6 +589,18 @@ button:focus,
   margin: auto;
   width: 40%;
   height: 40%;
+}
+
+#person-at-computer {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+#person-with-laptop {
+  display: block;
+  margin: auto;
+  width: 40%;
 }
 
 .sun {
