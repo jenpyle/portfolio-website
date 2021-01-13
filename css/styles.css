@@ -9,7 +9,7 @@
 :root {
   --primary-color: #357b70;
   --secondary-color: #e0b354;
-  --dark-grey: #ffe1eb;
+  --dark-grey: #2b2b2b;
   --primary-background-color: LavenderBlush;
   --color1: #ffdce7;
   --color2: #ffe1eb;
@@ -18,6 +18,11 @@
   --selected-link-color: #489c79;
   --visited-color: #05676e;
   --font-weight: bold;
+}
+
+#Layer_1 {
+  height: 10%
+  width: 10%;
 }
 
 body {
@@ -69,7 +74,7 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  font-size: 150%;
+  font-size: 125%;
 }
 
 a:active {
@@ -134,6 +139,7 @@ button:focus,
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  border: none !important;
 }
 
 .social-media__item:hover,
@@ -190,7 +196,6 @@ button:focus,
 .about-list {
   list-style-type: none;
   text-align: center;
-  background-color: var(--color2);
 }
 
 .about-list__item {
@@ -234,50 +239,52 @@ button:focus,
     grid-row-end: 3;
   }
 }
+/*-START HERE------------------------------------------------------------------------------*/
+.contact-info {
+  width: 450px;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
 
-/* start grid fallback for unsupported browsers */
+.contact-info li{
+  text-align: left;
+  margin-top:40px;
+}
+
+.contact-info img{
+  vertical-align: middle;
+  padding-right: 20px;
+}
+
+/* start grid fallback for unsupported browsers 
 .contact-form {
   background-color: var(--secondary-background-color);
   display: inline-block;
   width: 33%;
   height: auto;
 }
-/* end grid fallback */
-@supports (display: grid) {
-  .contact-form {
-    background-color: var(--secondary-background-color);
-    border: 1px solid rosybrown;
-    padding: 0px;
-    min-height: auto;
-    width: 300px;
-    /*margin: 90px;*/
-  }
+end grid fallback */
+
+.contact-form {
+  background-color: var(--secondary-background-color);
+  border: 1px solid rosybrown;
+  height: 480px;
+  width: 450px;
 }
 
-.basic-info {
-  background-color: var(--color2);
-  height: 450px;
-  width: auto;
-  font-size: larger;
-  margin-top: 40px;
-  padding: 10px;
-}
-
-.basic-info__address {
-  font-weight: bold;
-}
-
-.message-title {
+.contact-form h1 {
   color: hsl(0, 5%, 37%);
   text-align: center;
 }
 
-input {
+.contact-form input {
   width: 100%;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
-#contact-message {
+.contact-form textarea {
   height: 200px;
   width: 100%;
   margin-bottom: 5px;
@@ -290,6 +297,9 @@ input {
   justify-content: space-evenly;
 }
 
+
+
+/*-END OF CHANGES------------------------------------------------------------------------------*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;
