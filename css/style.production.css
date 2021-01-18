@@ -5,6 +5,15 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version
+*/
+
+/* external style sheet */
+
 #Layer_1 {
   height: 10%;
   width: 10%;
@@ -156,7 +165,7 @@ button:focus,
 
 .social-media__item:hover,
 .social-media__item:focus {
-  width: 3%;
+  width: 8%;
   height: auto;
 }
 
@@ -251,16 +260,16 @@ button:focus,
     grid-row-end: 3;
   }
 }
-/*-START HERE------------------------------------------------------------------------------*/
+
 .contact-info {
   width: 450px;
   font-size: larger;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
 }
 
@@ -273,15 +282,6 @@ button:focus,
   vertical-align: middle;
   padding-right: 20px;
 }
-
-/* start grid fallback for unsupported browsers 
-.contact-form {
-  background-color: var(--secondary-background-color);
-  display: inline-block;
-  width: 33%;
-  height: auto;
-}
-end grid fallback */
 
 .contact-form {
   background-color: Linen;
@@ -312,13 +312,12 @@ end grid fallback */
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-/*-END OF CHANGES------------------------------------------------------------------------------*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;
@@ -515,6 +514,39 @@ end grid fallback */
   }
 }
 
+.css1 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: scale1;
+  animation-name: scale1;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+      transform-origin: center;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform: translate(15px, -15px);
+  -ms-transform: translate(15px, -15px);
+      transform: translate(15px, -15px);
+}
+
+@-webkit-keyframes scale1 {
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scale1 {
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
 .bulb-color {
   -webkit-animation: 5s color-change-bulb infinite alternate linear;
   animation: 5s color-change-bulb infinite alternate linear;
@@ -551,39 +583,6 @@ end grid fallback */
   }
 }
 
-.css1 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-name: scale1;
-  animation-name: scale1;
-  -webkit-transform-origin: center;
-  -ms-transform-origin: center;
-  transform-origin: center;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-transform: translate(15px, -15px);
-  -ms-transform: translate(15px, -15px);
-  transform: translate(15px, -15px);
-}
-
-@-webkit-keyframes scale1 {
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-
-@keyframes scale1 {
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-/*-------------------------------------------------------------------------------------*/
 #STONE {
   display: block;
   margin: auto;
@@ -602,6 +601,53 @@ end grid fallback */
   margin: auto;
   width: 40%;
 }
+
+.squiggle, .dots3, .dots4{
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.dots4{
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.dots3{
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg) scale(1.1);
+            transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    -webkit-transform:rotate(360deg) scale(1.1);
+            transform:rotate(360deg) scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg) scale(1.1);
+            transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    -webkit-transform:rotate(360deg) scale(1.1);
+            transform:rotate(360deg) scale(1.1);
+  }
+}
+
 
 .sun {
   -webkit-animation: 10s color-change3 infinite alternate linear;

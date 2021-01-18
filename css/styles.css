@@ -144,7 +144,7 @@ button:focus,
 
 .social-media__item:hover,
 .social-media__item:focus {
-  width: 3%;
+  width: 8%;
   height: auto;
 }
 
@@ -239,7 +239,7 @@ button:focus,
     grid-row-end: 3;
   }
 }
-/*-START HERE------------------------------------------------------------------------------*/
+
 .contact-info {
   width: 450px;
   font-size: larger;
@@ -257,15 +257,6 @@ button:focus,
   vertical-align: middle;
   padding-right: 20px;
 }
-
-/* start grid fallback for unsupported browsers 
-.contact-form {
-  background-color: var(--secondary-background-color);
-  display: inline-block;
-  width: 33%;
-  height: auto;
-}
-end grid fallback */
 
 .contact-form {
   background-color: var(--secondary-background-color);
@@ -297,7 +288,6 @@ end grid fallback */
   justify-content: space-evenly;
 }
 
-/*-END OF CHANGES------------------------------------------------------------------------------*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .project-list {
     -ms-grid-columns: 1fr 20px 1fr;
@@ -494,6 +484,37 @@ end grid fallback */
   }
 }
 
+.css1 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: scale1;
+  animation-name: scale1;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-transform: translate(15px, -15px);
+  transform: translate(15px, -15px);
+}
+
+@-webkit-keyframes scale1 {
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scale1 {
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
 .bulb-color {
   -webkit-animation: 5s color-change-bulb infinite alternate linear;
   animation: 5s color-change-bulb infinite alternate linear;
@@ -530,37 +551,6 @@ end grid fallback */
   }
 }
 
-.css1 {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-name: scale1;
-  animation-name: scale1;
-  -webkit-transform-origin: center;
-  transform-origin: center;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-transform: translate(15px, -15px);
-  transform: translate(15px, -15px);
-}
-
-@-webkit-keyframes scale1 {
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-
-@keyframes scale1 {
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-  }
-}
-/*-------------------------------------------------------------------------------------*/
 #STONE {
   display: block;
   margin: auto;
@@ -579,6 +569,32 @@ end grid fallback */
   margin: auto;
   width: 40%;
 }
+
+.squiggle, .dots3, .dots4{
+  animation-duration: 8s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  animation-timing-function: linear;
+}
+
+.dots4{
+  animation-duration: 10s;
+}
+
+.dots3{
+  animation-duration: 6s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1.1);
+  }
+  to {
+    transform:rotate(360deg) scale(1.1);
+  }
+}
+
 
 .sun {
   -webkit-animation: 10s color-change3 infinite alternate linear;
