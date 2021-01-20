@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   background-color: LavenderBlush;
   line-height: normal;
@@ -25,13 +25,13 @@ body {
 }
 
 h1 {
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: bold;
   line-height: normal;
 }
 
 h2 {
-  font-family: "Abel", sans-serif;
+  font-family: 'Abel', sans-serif;
   font-weight: bold;
   line-height: normal;
 }
@@ -56,7 +56,6 @@ td {
   background-color: Linen;
   border: 1px solid Rosybrown;
 }
-.skills
 
 a {
   color: #357b70;
@@ -151,7 +150,7 @@ button:focus,
   border-radius: 50%;
 }
 
-.about-body__portrait{
+.about-body__portrait {
   border-radius: 10%;
 }
 
@@ -219,41 +218,41 @@ button:focus,
   text-align: center;
 }
 
-.about-body__bio{
-  width:600px;
+.about-body__bio {
+  width: 600px;
   margin-top: 20px;
 }
 
-.about-body__content{
+.about-body__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 20px;
 }
 
-.about-body__more{
+.about-body__more {
   margin-top: 20px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.about-body__more img{
-  width:250px;
-  height:auto;
+.about-body__more img {
+  width: 250px;
+  height: auto;
   border-radius: 10%;
   margin: 20px;
   margin-top: 40px;
 }
 
-.about-body__more p{
+.about-body__more p {
   max-width: 600px;
 }
 
@@ -300,11 +299,11 @@ button:focus,
   width: 450px;
   font-size: larger;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -322,7 +321,8 @@ button:focus,
   background-color: Linen;
   border: 1px solid rosybrown;
   height: 480px;
-  width: 65%;
+  width: 100%;
+  max-width: 750px;
 }
 
 .contact-form h1 {
@@ -347,10 +347,10 @@ button:focus,
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; 
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -556,7 +556,7 @@ button:focus,
   animation-name: scale1;
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
-      transform-origin: center;
+  transform-origin: center;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -565,7 +565,7 @@ button:focus,
   animation-timing-function: linear;
   -webkit-transform: translate(15px, -15px);
   -ms-transform: translate(15px, -15px);
-      transform: translate(15px, -15px);
+  transform: translate(15px, -15px);
 }
 
 @-webkit-keyframes scale1 {
@@ -637,52 +637,53 @@ button:focus,
   width: 40%;
 }
 
-.squiggle, .dots3, .dots4{
+.squiggle,
+.dots3,
+.dots4 {
   -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation-duration: 8s;
   -webkit-animation-name: rotate;
-          animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
-.dots4{
+.dots4 {
   -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  animation-duration: 10s;
 }
 
-.dots3{
+.dots3 {
   -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  animation-duration: 6s;
 }
 
 @-webkit-keyframes rotate {
   from {
     -webkit-transform: rotate(0deg) scale(1.1);
-            transform: rotate(0deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
   }
   to {
-    -webkit-transform:rotate(360deg) scale(1.1);
-            transform:rotate(360deg) scale(1.1);
+    -webkit-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
   }
 }
 
 @keyframes rotate {
   from {
     -webkit-transform: rotate(0deg) scale(1.1);
-            transform: rotate(0deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
   }
   to {
-    -webkit-transform:rotate(360deg) scale(1.1);
-            transform:rotate(360deg) scale(1.1);
+    -webkit-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
   }
 }
-
 
 .sun {
   -webkit-animation: 10s color-change3 infinite alternate linear;
