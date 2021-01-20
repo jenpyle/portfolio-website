@@ -203,15 +203,33 @@ button:focus,
   text-align: center;
 }
 
-.about-body__more__list {
-  list-style-type: none;
-  text-align: center;
+.about-body__bio{
+  width:600px;
+  margin-top: 20px;
 }
 
-.about-body__more__pics{
-  width:30%;
+.about-body__content{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.about-body__more{
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-body__more img{
+  width:250px;
   height:auto;
-  border-radius: 50%;
+  border-radius: 10%;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.about-body__more p{
+  max-width: 600px;
 }
 
 /* start grid fallback for unsupported browsers */
@@ -298,17 +316,7 @@ button:focus,
   width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.about-body__bio{
-  width:600px;
-  margin-top: 20px;
-}
-
-.about-body__content{
-  display: flex;
-  flex-direction: column;
+  justify-content: space-evenly; 
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
@@ -577,8 +585,8 @@ button:focus,
 #STONE {
   display: block;
   margin: auto;
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
 }
 
 #person-at-computer {
