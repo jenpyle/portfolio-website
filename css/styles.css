@@ -61,11 +61,7 @@ td {
   background-color: var(--secondary-background-color);
   border: 1px solid var(--primary-accent-color);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> gh-pages
-a {
+<<<<<<< HEAD <<<<<<< HEAD =======>>>>>>>gh-pages =======>>>>>>>gh-pages a {
   color: var(--primary-color);
   font-weight: var(--font-weight);
 }
@@ -111,9 +107,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
