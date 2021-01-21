@@ -278,6 +278,7 @@ button:focus,
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .contact-info li {
