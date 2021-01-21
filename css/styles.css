@@ -61,7 +61,8 @@ td {
   background-color: var(--secondary-background-color);
   border: 1px solid var(--primary-accent-color);
 }
-.skills a {
+
+a {
   color: var(--primary-color);
   font-weight: var(--font-weight);
 }
@@ -293,7 +294,8 @@ button:focus,
   background-color: var(--secondary-background-color);
   border: 1px solid rosybrown;
   height: 480px;
-  width: 65%;
+  width: 100%;
+  max-width: 750px;
 }
 
 .contact-form h1 {
