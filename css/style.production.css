@@ -307,6 +307,7 @@ button:focus,
   -ms-flex-align: center;
   align-items: center;
   list-style: none;
+  margin-bottom: 100px;
 }
 
 .contact-info li {
