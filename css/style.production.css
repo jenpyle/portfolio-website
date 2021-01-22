@@ -232,7 +232,7 @@ button:focus,
   border-radius: 10%;
   margin: 20px;
   margin-top: 40px;
-  image-orientation: from-image;
+  image-orientation: vertical;
 }
 
 .about-body__more p {
