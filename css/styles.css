@@ -106,10 +106,6 @@ button:focus,
   opacity: 0.8;
 }
 
-.contact-form__button:hover {
-  cursor: pointer;
-}
-
 .button__secondary {
   background-color: var(--secondary-color);
   color: var(--dark-grey);
@@ -124,10 +120,6 @@ button:focus,
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-}
-
-.about-body__portrait {
-  border-radius: 10%;
 }
 
 .page-footer {
@@ -197,8 +189,12 @@ button:focus,
   text-align: center;
 }
 
+.about-body__portrait {
+  border-radius: 10%;
+}
+
 .about-body__bio {
-  width: 600px;
+  max-width: 600px;
   margin-top: 20px;
 }
 
@@ -206,6 +202,7 @@ button:focus,
   display: flex;
   flex-direction: column;
   margin: 20px;
+  align-items: center;
 }
 
 .about-body__more {
@@ -220,6 +217,7 @@ button:focus,
   border-radius: 10%;
   margin: 20px;
   margin-top: 40px;
+  image-orientation: from-image;
 }
 
 .about-body__more p {
@@ -312,6 +310,10 @@ button:focus,
   height: 200px;
   width: 100%;
   margin-bottom: 5px;
+}
+
+.contact-form__button:hover {
+  cursor: pointer;
 }
 
 .flex-wrapper {
