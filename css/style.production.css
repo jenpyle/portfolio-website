@@ -2,12 +2,12 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
-/* external style sheet */
-
-* {
+*,
+*:after,
+*::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -115,9 +115,6 @@ button:focus,
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 100%;
   margin: auto;
   padding: 20px;
@@ -147,7 +144,48 @@ button:focus,
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+}
+
+.navigation-list a {
+  position: relative;
+  display: inline-block;
+  margin: 15px 25px;
+  outline: none;
+  color: #357b70;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+}
+
+.navigation-list a:hover::after,
+.navigation-list a:focus::after {
+  height: 2px;
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.navigation-list a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #357b70;
+  content: '';
+  opacity: 0;
+  -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+  transition: height 0.3s, opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .navigation-list__item--active {
@@ -232,6 +270,7 @@ button:focus,
   border-radius: 10%;
   margin: 20px;
   margin-top: 40px;
+  image-orientation: from-image;
 }
 
 .about-body__more p {
