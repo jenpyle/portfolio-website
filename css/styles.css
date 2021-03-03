@@ -197,7 +197,7 @@ button:focus,
 
 .about-body__bio {
   max-width: 600px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .about-body__content {
@@ -208,7 +208,6 @@ button:focus,
 }
 
 .about-body__more {
-  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -223,11 +222,16 @@ button:focus,
 }
 
 .about-body__more p {
+  /*margin-top: 20px;*/
   max-width: 600px;
 }
 
 .work-page h1 {
   font-size: 36px;
+}
+
+.project-list .button {
+  color: Linen;
 }
 
 .project-list__item {

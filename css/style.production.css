@@ -281,6 +281,10 @@ button:focus,
   font-size: 36px;
 }
 
+.project-list .button {
+  color: Linen;
+}
+
 .project-list__item {
   /* start grid fallback for unsupported browsers */
   background-color: Linen;
