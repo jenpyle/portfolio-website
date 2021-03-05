@@ -28,6 +28,7 @@ body {
   font-weight: 400;
   background-color: var(--primary-background-color);
   line-height: normal;
+  text-align: center;
 }
 
 h1 {
@@ -94,14 +95,18 @@ button:focus,
 }
 
 .page-header {
-  max-width: 100%;
+  display: inline-flex;
+  width: 100%;
   margin: auto;
   padding: 20px;
   border-bottom: 1px solid rosybrown;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-image {
   border-radius: 20%;
+  height: 75px;
 }
 
 .page-header__item {
@@ -175,20 +180,23 @@ button:focus,
   transform: scale(1.3);
 }
 
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
+.content-wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.profile__portrait {
-  float: left;
+.content-wrapper img {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
 }
 
-.about-body {
-  text-align: center;
+.content-wrapper div {
+  min-width: 250px;
 }
 
 .about-body__portrait {
@@ -197,7 +205,6 @@ button:focus,
 
 .about-body__bio {
   max-width: 600px;
-  /*margin-top: 20px;*/
 }
 
 .about-body__content {
@@ -222,7 +229,6 @@ button:focus,
 }
 
 .about-body__more p {
-  /*margin-top: 20px;*/
   max-width: 600px;
 }
 
@@ -320,6 +326,7 @@ button:focus,
   height: 480px;
   width: 100%;
   max-width: 750px;
+  text-align: left;
 }
 
 .contact-form h1 {

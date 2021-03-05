@@ -1,5 +1,10 @@
 {
-  "extends": ["airbnb", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jquery": true
+  },
+  "extends": ["prettier", "eslint:recommended"],
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
@@ -9,6 +14,6 @@
     "no-process-exit": "off",
     "object-shorthand": "off",
     "class-methods-use-this": "off",
-    "no-alert": "off"
+    "quotes": ["error", "single"]
   }
 }
