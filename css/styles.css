@@ -191,7 +191,6 @@ button:focus,
 
 .content-wrapper img {
   width: 250px;
-  margin-right: 40px;
   border-radius: 50%;
 }
 
@@ -200,7 +199,10 @@ button:focus,
 }
 
 .about-body__portrait {
+  /* width: 250px;
+  height: auto; */
   border-radius: 10%;
+  max-width: 95%;
 }
 
 .about-body__bio {

@@ -244,16 +244,17 @@ button:focus,
 
 .content-wrapper img {
   width: 250px;
-  margin-right: 40px;
   border-radius: 50%;
 }
 
 .content-wrapper div {
   min-width: 250px;
+  padding: 20px;
 }
 
 .about-body__portrait {
   border-radius: 10%;
+  max-width: 95%;
 }
 
 .about-body__bio {
