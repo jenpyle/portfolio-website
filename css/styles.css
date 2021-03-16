@@ -196,11 +196,10 @@ button:focus,
 
 .content-wrapper div {
   min-width: 250px;
+  padding: 20px;
 }
 
 .about-body__portrait {
-  /* width: 250px;
-  height: auto; */
   border-radius: 10%;
   max-width: 95%;
 }
@@ -239,6 +238,7 @@ button:focus,
 }
 
 .project-list .button {
+  display: block;
   color: Linen;
 }
 

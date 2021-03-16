@@ -302,7 +302,9 @@ button:focus,
 }
 
 .project-list .button {
+  display: block;
   color: Linen;
+  /* margin-bottom: 10px; */
 }
 
 .project-list__item {
