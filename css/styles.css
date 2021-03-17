@@ -16,6 +16,8 @@
 *:after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #Layer_1 {
@@ -116,6 +118,10 @@ button:focus,
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
+}
+
+.Navbar__Link-toggle {
+  display: none;
 }
 
 .navigation-list {
@@ -303,6 +309,52 @@ button:focus,
   }
 }
 
+@media all and (max-width: 816px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-header__item {
+    flex-basis: 0;
+  }
+
+  .logo-image {
+    height: 50px;
+  }
+  .main-navigation {
+    display: none;
+  }
+
+  .page-header__item:last-child {
+    flex-grow: 0;
+    text-align: center;
+    align-self: center;
+  }
+
+  .navigation-list {
+    margin-left: 0;
+  }
+
+  .navigation-list a {
+    margin-right: 0;
+  }
+
+  .Navbar__Link-toggle {
+    display: initial;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    font-size: 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+}
 .contact-info {
   width: 450px;
   font-size: larger;

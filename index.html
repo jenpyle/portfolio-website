@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet" />
   <!-- important that its above styles.css for not overriding -->
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
@@ -20,6 +21,9 @@
     <header class="page-header">
       <div class="page-header__item">
         <img class="logo-image" src="img/profolioLogo2-final.jpg" alt="Jenny's header logo" />
+      </div>
+      <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars"></i>
       </div>
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
@@ -64,6 +68,16 @@
       </a>
     </div>
   </footer>
+  <script>
+    function classToggle() {
+      const navs = document.querySelectorAll('.main-navigation')
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    }
+
+    document.querySelector('.Navbar__Link-toggle')
+      .addEventListener('click', classToggle);
+
+  </script>
 </body>
 
 </html>
