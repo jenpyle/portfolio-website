@@ -108,7 +108,7 @@ button:focus,
 
 .logo-image {
   border-radius: 20%;
-  height: 75px;
+  height: 80px;
 }
 
 .page-header__item {
@@ -320,7 +320,7 @@ button:focus,
   }
 
   .logo-image {
-    height: 50px;
+    height: 55px;
   }
   .main-navigation {
     display: none;
@@ -332,12 +332,11 @@ button:focus,
     align-self: center;
   }
 
-  .navigation-list {
-    margin-left: 0;
-  }
-
   .navigation-list a {
-    margin-right: 0;
+    margin: 5px;
+    font-size: medium;
+    font-weight: 900 !important;
+    margin-top: 15px;
   }
 
   .Navbar__Link-toggle {
