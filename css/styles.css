@@ -351,9 +351,7 @@ button:focus,
 
   .navigation-list a {
     margin: 5px;
-    font-size: medium;
-    font-weight: 900 !important;
-    margin-top: 15px;
+    margin-top: 50px;
   }
 
   .hamburgerMenu {
