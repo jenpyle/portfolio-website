@@ -120,7 +120,7 @@ button:focus,
   text-align: right;
 }
 
-.Navbar__Link-toggle {
+.hamburgerMenu {
   display: none;
 }
 
@@ -310,6 +310,28 @@ button:focus,
 }
 
 @media all and (max-width: 816px) {
+  .main-navigation {
+    background-color: rgba(255, 255, 255, 0.85);
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    overflow: hidden;
+    padding: 40px;
+    padding-top: 100px;
+    z-index: 1000;
+  }
+
+  .closeButton {
+    display: none;
+  }
+
+  .navigation-list li {
+    display: block;
+  }
+
   .page-header {
     flex-direction: column;
     align-items: flex-start;
@@ -322,14 +344,9 @@ button:focus,
   .logo-image {
     height: 55px;
   }
-  .main-navigation {
-    display: none;
-  }
 
   .page-header__item:last-child {
-    flex-grow: 0;
-    text-align: center;
-    align-self: center;
+    text-align: left;
   }
 
   .navigation-list a {
@@ -339,7 +356,7 @@ button:focus,
     margin-top: 15px;
   }
 
-  .Navbar__Link-toggle {
+  .hamburgerMenu {
     display: initial;
     position: absolute;
     top: 30px;
@@ -348,6 +365,7 @@ button:focus,
     font-size: 30px;
     color: var(--primary-color);
     cursor: pointer;
+    z-index: 2000;
   }
 
   .Navbar__ToggleShow {
