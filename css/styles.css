@@ -64,7 +64,8 @@ a:visited {
 a:hover,
 a:focus {
   text-decoration: none;
-  font-size: 125%;
+  /* background-color: lightblue; */
+  border-style: solid;
 }
 
 a:active {
