@@ -296,14 +296,6 @@ button:focus,
     margin: 0;
   }
 
-  /* .project-list__item:last-child {
-    grid-column: 3;
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row: 1;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  } */
 }
 
 @media all and (max-width: 250px) {
@@ -330,10 +322,6 @@ button:focus,
   .project-list {
     grid-gap: 10px;
   }
-  /* .project-list__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  } */
   h1 {
     font-size: 22px;
   }
