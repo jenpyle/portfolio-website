@@ -11,8 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet" />
   <!-- important that its above styles.css for not overriding -->
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <script src="js/svg-inject.min.js"></script>
 </head>
 
@@ -21,6 +22,10 @@
     <header class="page-header">
       <div class="page-header__item">
         <img class="logo-image" src="img/profolioLogo2-final.jpg" alt="Jenny's header logo" />
+      </div>
+      <div class="Navbar__Link hamburgerMenu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times closeButton"></i>
       </div>
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
@@ -32,7 +37,7 @@
               Me</a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item">Projects</a>
+            <a href="projects.html" role="menuitem" class="navigation-list__item navigation-list__item">Projects</a>
           </li>
           <li role="presentation">
             <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
@@ -51,13 +56,13 @@
           Engineering and minor in Computer Science. As I started taking computer science classes to enhance my
           Mechanical
           Engineering I found that I was so excited and passionate about my coding classes. Because of this, I have
-          decided that I want to start my career in the computer science industry!<br><br> I currently have about 2
+          decided that I want to start my career in the computer science industry!<br><br> I currently have about 3
           years
           of
           coding experience. I believe that my engineering knowledge will aid my programming skills, as I can apply both
           fields of knowledge to design, testing, and development components of projects. I am currently looking for
           Software Developer/Engineer and Full-Stack Developer jobs located in Fort Collins and the northern Colorado
-          region, along with fully remote positions. </p>
+          region. I cannot accept fully remote positions at this time </p>
         <table>
           <thead>
             <tr>
@@ -75,24 +80,22 @@
             <tr>
               <td>JavaScript</td>
               <td>
-                1.5</td>
+                2</td>
               <td>Intermediate</td>
             </tr>
 
             <tr>
               <td>HTML</td>
               <td>
-                &lt; 1 year</td>
+                1 year</td>
               <td>Intermediate</td>
             </tr>
             <tr>
               <td>CSS</td>
               <td>
-                &lt; 1 year</td>
+                1 year</td>
               <td>Intermediate</td>
             </tr>
-
-
             <tr>
               <td>Python</td>
               <td>1</td>
@@ -143,6 +146,31 @@
       </a>
     </div>
   </footer>
+  <script>
+    let menuOpen = false;
+
+    function classToggle() {
+      const navs = document.querySelectorAll('.main-navigation')
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      let closeButton = document.querySelector('.closeButton');
+      let hamburgerMenu = document.querySelector('.fa-bars');
+
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        closeButton.style.display = "block";
+        hamburgerMenu.style.display = "none";
+      }
+      else {
+        hamburgerMenu.style.display = "block";
+        closeButton.style.display = "none";
+      }
+    }
+
+    document.querySelector('.hamburgerMenu')
+      .addEventListener('click', classToggle);
+
+  </script>
 </body>
 
 </html>

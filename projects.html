@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profolio Projects</title>
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.ico" />
+  <link rel="normalize" type="text/css" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+  <!-- important that its above styles.css for not overriding -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="js/svg-inject.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <header class="page-header">
+      <img class="page-header__item logo-image" src="img/profolioLogo2-final.jpg" alt="Jenny's header logo" />
+      <div class="Navbar__Link hamburgerMenu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times closeButton"></i>
+      </div>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+          </li>
+
+          <li role="presentation">
+            <a href="projects.html" role="menuitem"
+              class="navigation-list__item navigation-list__item--active">Projects</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="project-page">
+      <h1>Projects</h1>
+      <div class="project-list">
+        <div class="project-list__item">
+          <h2>Meet App</h2>
+          <div class="project-list__item__container">
+            <a href="https://github.com/jenpyle/meet" class="project-list__item__container__github" target="_blank">See
+              project on
+              Github</a>
+            <p>A serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+              technique
+              usign AWS Lambda. The application uses the Google Calendar API to fetch upcoming events.
+            </p>
+            <a href="https://jenpyle.github.io/meet/" class="glow-on-hover" target="_blank">View App</a>
+          </div>
+          <img class="project-list__item__img" src="img/meet.PNG" alt="meet app Image" />
+        </div>
+
+        <div class="project-list__item">
+          <h2>Cocktail Recipe Finder</h2>
+          <div class="project-list__item__container">
+            <a href="https://github.com/jenpyle/Cocktail-Generator/tree/gh-pages"
+              class="project-list__item__container__github" target="_blank">See project on
+              Github</a>
+            <p>A JavaScript app built with HTML, CSS, and JavaScript, which communicates with
+              external API.</p>
+            <a href="https://jenpyle.github.io/Cocktail-Generator/" class="glow-on-hover" target="_blank">View App</a>
+          </div>
+          <img class="project-list__item__img" src="img/cocktail.PNG" alt="Cocktail Recipe App Image" />
+        </div>
+        <div class="project-list__item">
+          <h2>MyFlix Movie App: Client-side</h2>
+          <div class="project-list__item__container">
+            <a href="https://github.com/jenpyle/myFlix-client" class="project-list__item__container__github"
+              target="_blank">See project on Github</a>
+            <!-- <p>A REST API and architected database built using MongoDB, Express, React, Redux, and Node.js. Client and
+              server
+              authentication via Axios, along with JWT-based and HTTP auth.
+            </p> -->
+            <p>(Updated description coming soon)</p>
+
+            <a href="https://myflix-jenpyle.netlify.app/login" class="glow-on-hover" target="_blank">View App</a>
+          </div>
+          <img class="project-list__item__img" src="img/myflix-client.PNG" alt="myFlix app Image" />
+        </div>
+        <div class="project-list__item">
+          <h2>MyFlix Movie App: Server-side</h2>
+          <div class="project-list__item__container">
+            <a href="https://github.com/jenpyle/myFlix-app" class="project-list__item__container__github"
+              target="_blank">See project on Github</a>
+            <!-- <p>A REST API and architected database built using JavaScript, Node.js, Express, and MongoDB. SQL, mongoose, 
+            </p> -->
+            <p>(Updated description coming soon)</p>
+            <a href="https://jennysflix.herokuapp.com/documentation.html" class="glow-on-hover" target="_blank">See
+              project
+              documentation</a>
+          </div>
+          <img class="project-list__item__img" src="img/myflix-server.PNG" alt="myFlix documentation Image" />
+        </div>
+        <div class="project-list__item">
+          <h2>To-Do List</h2>
+          <div class="project-list__item__container">
+            <a href="https://github.com/jenpyle/To-Do-List-App/tree/gh-pages"
+              class="project-list__item__container__github" target="_blank">See project on
+              Github</a>
+            <p>A jQuery mini project of a basic to-do list</p>
+            <a href="https://jenpyle.github.io/To-Do-List-App/" class="glow-on-hover" target="_blank">View App</a>
+          </div>
+          <img class="project-list__item__img" src="img/To-Do.PNG" alt="To Do App Image" />
+        </div>
+        <div class="project-list__item">
+          <h2>Native App Project Coming Soon</h2>
+          <a href="https://github.com/jenpyle/chat" class="project-list__item__container__github" target="_blank">See
+            project on Github</a>
+        </div>
+        <div class="project-list__item">
+          <h2>Machine Learning Digit Classification</h2>
+          <a href="https://github.com/jenpyle/Digit-Classification" class="project-list__item__container__github"
+            target="_blank">See project on Github</a>
+          <p>A python project that compares accuracy levels of two neural network classifers for two data sets:
+            handwritten digits VS images of house numbers.</p>
+          <a href="https://github.com/jenpyle/Digit-Classification/blob/main/Report.md" class="glow-on-hover"
+            target="_blank">View Report</a>
+        </div>
+        <div class="project-list__item">
+          <h2>C++ Project</h2>
+          <p>Description coming soon</p>
+          <a href="https://github.com/jenpyle/temp-name" class="project-list__item__container__github"
+            target="_blank">See project on Github</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div>
+    <img src="./img/person-with-laptop.svg" onload="SVGInject(this)" alt="Image of woman with an idea light bulb" />
+  </div>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a class="social-media__item" href="https://github.com/jenpyle" target="_blank">
+        <img class="social-media__item" src="img/github.svg" alt="github link" />
+      </a>
+      <a class="social-media__item" href="https://www.linkedin.com/in/jenniferpyle1/" target="_blank">
+        <img class="social-media__item" src="img/linkedin.svg" alt="linkedin link" />
+      </a>
+    </div>
+  </footer>
+  <script>
+    let menuOpen = false;
+
+    function classToggle() {
+      const navs = document.querySelectorAll('.main-navigation')
+      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+      let closeButton = document.querySelector('.closeButton');
+      let hamburgerMenu = document.querySelector('.fa-bars');
+
+      menuOpen = !menuOpen;
+
+      if (menuOpen) {
+        closeButton.style.display = "block";
+        hamburgerMenu.style.display = "none";
+      }
+      else {
+        hamburgerMenu.style.display = "block";
+        closeButton.style.display = "none";
+      }
+    }
+
+    document.querySelector('.hamburgerMenu')
+      .addEventListener('click', classToggle);
+
+  </script>
+</body>
+
+</html>

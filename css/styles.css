@@ -16,7 +16,7 @@
 *:after,
 *::before {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0.1rem;
   padding: 0;
 }
 
@@ -36,7 +36,8 @@ body {
 h1 {
   font-family: 'Abel', sans-serif;
   font-weight: var(--font-weight);
-  line-height: normal;
+  font-size: 3rem !important;
+  margin: 1.5rem 0rem;
 }
 
 h2 {
@@ -65,7 +66,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   /* background-color: lightblue; */
-  border-style: solid;
+  /* border-style: solid; */
 }
 
 a:active {
@@ -240,10 +241,6 @@ button:focus,
   max-width: 600px;
 }
 
-.work-page h1 {
-  font-size: 36px;
-}
-
 .project-list .button {
   display: block;
   color: Linen;
@@ -261,23 +258,43 @@ button:focus,
 } /* end grid fallback */
 
 .project-list__item h2 {
+  margin-top: 1rem;
+  font-size: 2rem;
   width: 100%;
 }
 
 .project-list__item__container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 50%;
 }
-.project-list__item__container p{
-  margin:2rem 0rem;
+.project-list__item__container p {
+  margin: 2rem 0rem;
+}
+.project-list__item__container__github {
+  margin-top: 1rem;
+  /* width: 100%; */
+  border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding-bottom: 0.25em;
+  text-decoration: none;
+}
+
+.project-list__item__container__github:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 12%;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+  text-decoration: none;
 }
 
 .project-list__item__img {
-  border-style:solid;
+  border-style: solid;
   border-color: aqua;
   border-radius: 5px;
-  height:13rem;
+  height: 13rem;
 }
 
 @supports (display: grid) {
@@ -295,29 +312,27 @@ button:focus,
     min-height: auto;
     margin: 0;
   }
-
 }
 
 @media all and (max-width: 250px) {
   .project-list__item__container {
-
     width: 80%;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (min-width: 550px) and (max-width: 850px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 550px) {
   .project-list {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 850px) {
   /* shared code */
   .project-list {
     grid-gap: 10px;
@@ -327,7 +342,7 @@ button:focus,
   }
 }
 
-@media all and (max-width: 816px) {
+@media all and (max-width: 850px) {
   .main-navigation {
     background-color: rgba(255, 255, 255, 0.85);
     display: none;
@@ -372,6 +387,10 @@ button:focus,
     margin-top: 50px;
   }
 
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
   .hamburgerMenu {
     display: initial;
     position: absolute;
@@ -382,10 +401,6 @@ button:focus,
     color: var(--primary-color);
     cursor: pointer;
     z-index: 2000;
-  }
-
-  .Navbar__ToggleShow {
-    display: flex;
   }
 }
 .contact-info {
@@ -659,5 +674,72 @@ button:focus,
   }
   to {
     transform: translate(50px, -50px);
+  }
+}
+
+.glow-on-hover {
+  color: #fff !important;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
