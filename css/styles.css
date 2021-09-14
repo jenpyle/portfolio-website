@@ -291,8 +291,7 @@ button:focus,
 }
 
 .project-list__item__img {
-  border-style: solid;
-  border-color: aqua;
+  border: 1px solid aqua;
   border-radius: 5px;
   height: 13rem;
 }
