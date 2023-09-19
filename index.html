@@ -11,9 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Courgette&family=Ubuntu:wght@300&display=swap"
     rel="stylesheet" />
   <!-- important that its above styles.css for not overriding -->
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <script src="https://unpkg.com/htmlincludejs"></script>
+  <script src="js/scroll.js" defer></script>
+
 </head>
 
 <body>
@@ -45,19 +48,20 @@
     </header>
 
   </div>
-  <div class="content-wrapper">
-    <img src="img/profilePicSquare.jpg" alt="Jennifer Pyle Portrait" />
-    <div>
-      <h1>Hello World!</h1>
-      <p>
-        My name is Jennifer Pyle, I am a software developer from
-        Colorado
-      </p>
+  <div class="sections-container">
+    <div class="intro-section animation">
+      <include src="./intro.html"></include>
+    </div>
+    <div class="about-section animation">
+      <include src="./about.html"></include>
+    </div>
+    <div class="projects-section animation">
+      <include src="./projects.html"></include>
+    </div>
+    <div class="contact-section animation">
+      <include src="./contact.html"></include>
     </div>
   </div>
-
-  <a href="projects.html">Check out some of my projects</a>
-
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
@@ -97,6 +101,7 @@
       .addEventListener('click', classToggle);
 
   </script>
+
 </body>
 
 </html>

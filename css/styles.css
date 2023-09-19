@@ -188,10 +188,14 @@ button:focus,
   transform: scale(1.3);
 }
 
+.sections-container {
+  scroll-margin-top: 500px;
+}
+
 .content-wrapper {
   width: 100%;
-  display: inline-flex;
   flex-wrap: wrap-reverse;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -205,6 +209,22 @@ button:focus,
 .content-wrapper div {
   min-width: 250px;
   padding: 20px;
+}
+
+.animation {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.4s;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.svgImg {
+  max-height: 200px;
 }
 
 .about-body__portrait {
@@ -354,7 +374,6 @@ button:focus,
     padding: 40px;
     padding-top: 100px;
     z-index: 1000;
-    
   }
 
   .closeButton {
@@ -697,7 +716,18 @@ button:focus,
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;

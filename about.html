@@ -12,40 +12,12 @@
     rel="stylesheet" />
   <!-- important that its above styles.css for not overriding -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <script src="js/svg-inject.min.js"></script>
 </head>
 
 <body>
-  <div>
-    <header class="page-header">
-      <div class="page-header__item">
-        <img class="logo-image" src="img/profolioLogo2-final.jpg" alt="Jenny's header logo" />
-      </div>
-      <div class="Navbar__Link hamburgerMenu">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times closeButton" style="display: none;"></i>
-      </div>
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About
-              Me</a>
-          </li>
-          <li role="presentation">
-            <a href="projects.html" role="menuitem" class="navigation-list__item navigation-list__item">Projects</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
   <div class="about-body">
     <h1>About Me</h1>
     <br>
@@ -133,44 +105,8 @@
     </div>
   </div>
   <div>
-    <img src="./img/person-hiking.svg" onload="SVGInject(this)" alt="Image of woman hiking" />
+    <img class="svgImg" src="./img/person-hiking.svg" onload="SVGInject(this)" alt="Image of woman hiking" />
   </div>
-  <footer class="page-footer">
-    <p>Find me on</p>
-    <div class="social-media">
-      <a class="social-media__item" href="https://github.com/jenpyle" target="_blank">
-        <img class="social-media__item" src="img/github.svg" alt="github link" />
-      </a>
-      <a class="social-media__item" href="https://www.linkedin.com/in/jenniferpyle1/" target="_blank">
-        <img class="social-media__item" src="img/linkedin.svg" alt="linkedin link" />
-      </a>
-    </div>
-  </footer>
-  <script>
-    let menuOpen = false;
-
-    function classToggle() {
-      const navs = document.querySelectorAll('.main-navigation')
-      navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-      let closeButton = document.querySelector('.closeButton');
-      let hamburgerMenu = document.querySelector('.fa-bars');
-
-      menuOpen = !menuOpen;
-
-      if (menuOpen) {
-        closeButton.style.display = "block";
-        hamburgerMenu.style.display = "none";
-      }
-      else {
-        hamburgerMenu.style.display = "block";
-        closeButton.style.display = "none";
-      }
-    }
-
-    document.querySelector('.hamburgerMenu')
-      .addEventListener('click', classToggle);
-
-  </script>
 </body>
 
 </html>
