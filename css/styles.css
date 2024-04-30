@@ -19,16 +19,6 @@
   margin: 0.1rem;
   padding: 0;
 }
-.underConstruction {
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
-  background-color: var(--primary-background-color);
-  line-height: normal;
-  text-align: center;
-}
-p {
-  font-size: medium;
-}
 
 #Layer_1 {
   height: 10%;
@@ -208,7 +198,7 @@ button:focus,
 }
 
 .content-wrapper img {
-  width: 20px;
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -364,6 +354,7 @@ button:focus,
     padding: 40px;
     padding-top: 100px;
     z-index: 1000;
+    
   }
 
   .closeButton {
@@ -706,18 +697,7 @@ button:focus,
 
 .glow-on-hover:before {
   content: '';
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
